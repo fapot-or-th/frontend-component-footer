@@ -50,7 +50,10 @@
     "react-router-dom": "6.21.3",
     "react-test-renderer": "17.0.2",
     "redux": "4.2.1",
-    "semantic-release": "21.1.2"
+    "semantic-release": "21.1.2",
+    "@edx/eslint-config": "4.0.0-alpha.1",
+    "ts-jest": "^29.1.2",
+    "jest-environment-jsdom": "^29.7.0"
   },
   "dependencies": {
     "@fortawesome/fontawesome-svg-core": "6.5.1",
@@ -58,9 +61,7 @@
     "@fortawesome/free-regular-svg-icons": "6.5.1",
     "@fortawesome/free-solid-svg-icons": "6.5.1",
     "@fortawesome/react-fontawesome": "0.2.0",
-    "jest-environment-jsdom": "^29.7.0",
-    "lodash": "^4.17.21",
-    "ts-jest": "^29.1.2"
+    "lodash": "^4.17.21"
   },
   "peerDependencies": {
     "@edx/frontend-platform": "^7.0.0",
