@@ -1,4 +1,4 @@
-import React, { Fragment } from 'react';
+import React, { Fragment, useEffect, useState } from 'react';
 import { injectIntl, intlShape } from '@edx/frontend-platform/i18n';
 import { ensureConfig } from '@edx/frontend-platform';
 import { AppContext } from '@edx/frontend-platform/react';
@@ -14,14 +14,17 @@ ensureConfig([
 const CookieBanner = ({ intl }) => {
   const domain = window.location.hostname.replace('apps', '');
 
-  const cookieConsent = Cookies.get('cookieconsent_status', { domain });
+  const [showCookie, setShowCookie] = useState(!!Cookies.get('cookieconsent_status', { domain }));
 
-  const onDismissCookie = () => Cookies.set('cookieconsent_status', 'dismiss', { domain });
+  const onDismissCookie = () => {
+    Cookies.set('cookieconsent_status', 'dismiss', { domain });
+    setShowCookie(false);
+  };
 
-  return cookieConsent ? <div /> : (
+  return showCookie ? (
     <div className="cookie-banner">
-      {intl.formatMessage(messages['cookie.banner.content'])}
       <div className="content">
+        {intl.formatMessage(messages['cookie.banner.content'])}
         <a
           className="learn-more-link"
           href="https://www.cookiesandyou.com/"
@@ -34,7 +37,7 @@ const CookieBanner = ({ intl }) => {
         { intl.formatMessage(messages['cookie.dismiss.button.label']) }
       </button>
     </div>
-  );
+  ) : <div />;
 };
 
 CookieBanner.contextType = AppContext;
