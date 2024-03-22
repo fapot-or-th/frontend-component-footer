@@ -12,6 +12,7 @@ import frCAMessages from './messages/fr_CA.json';
 import dedeCAMessages from './messages/de_DE.json';
 import ititCAMessages from './messages/it_IT.json';
 import ptptCAMessages from './messages/pt_PT.json';
+import thMessages from './messages/th.json';
 // no need to import en messages-- they are in the defaultMessage field
 
 var messages = {
@@ -28,7 +29,8 @@ var messages = {
   uk: ukMessages,
   'de-de': dedeCAMessages,
   'it-it': ititCAMessages,
-  'pt-pt': ptptCAMessages
+  'pt-pt': ptptCAMessages,
+  th: thMessages
 };
 export default messages;
 //# sourceMappingURL=index.js.map

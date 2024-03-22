@@ -27,7 +27,7 @@ const CookieBanner = ({ intl }) => {
           href="https://www.cookiesandyou.com/"
           aria-label={intl.formatMessage(messages['cookie.banner.content'])}
         >
-          {intl.formatMessage(messages['cookie.banner.leran.more'])}
+          {' '}{intl.formatMessage(messages['cookie.banner.leran.more'])}
         </a>
       </div>
       <button className="dismiss-button" type="button" onClick={onDismissCookie}>

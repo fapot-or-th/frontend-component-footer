@@ -31,5 +31,6 @@
   "footer.ariaLabel": "Page Footer",
 
   "cookie.banner.content": "This website uses cookies to ensure you get the best experience on our website. If you continue browsing this site, we understand that you accept the use of cookies.",
-  "cookie.dismiss.button.label": "Got it!"
+  "cookie.dismiss.button.label": "Got it!",
+  "cookie.banner.leran.more": "Learn more"
 }

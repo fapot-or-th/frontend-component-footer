@@ -18,17 +18,17 @@ var CookieBanner = function CookieBanner(_ref) {
   };
   return cookieConsent ? /*#__PURE__*/React.createElement("div", null) : /*#__PURE__*/React.createElement("div", {
     className: "cookie-banner"
-  }, /*#__PURE__*/React.createElement("div", {
+  }, intl.formatMessage(messages['cookie.banner.content']), /*#__PURE__*/React.createElement("div", {
     className: "content"
   }, /*#__PURE__*/React.createElement("a", {
     className: "learn-more-link",
     href: "https://www.cookiesandyou.com/",
     "aria-label": intl.formatMessage(messages['cookie.banner.content'])
-  }, intl.formatMessage(messages['cookie.banner.content'])), /*#__PURE__*/React.createElement("button", {
+  }, ' ', intl.formatMessage(messages['cookie.banner.leran.more']))), /*#__PURE__*/React.createElement("button", {
     className: "dismiss-button",
     type: "button",
     onClick: onDismissCookie
-  }, intl.formatMessage(messages['cookie.dismiss.button.label']))));
+  }, intl.formatMessage(messages['cookie.dismiss.button.label'])));
 };
 CookieBanner.contextType = AppContext;
 CookieBanner.propTypes = {
