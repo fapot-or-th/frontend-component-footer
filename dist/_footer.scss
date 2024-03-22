@@ -1,7 +1,7 @@
 $gray-footer: #fcfcfc !default;
 
 .footer {
-  display: none;
+  display: none !important;
   background-color: $gray-footer;
 }
 
