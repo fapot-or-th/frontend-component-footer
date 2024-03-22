@@ -17,7 +17,7 @@ var CookieBanner = function CookieBanner(_ref) {
     });
   };
   return cookieConsent ? /*#__PURE__*/React.createElement("div", null) : /*#__PURE__*/React.createElement("div", {
-    className: "cookie-nanner"
+    className: "cookie-banner"
   }, /*#__PURE__*/React.createElement("div", {
     className: "content"
   }, /*#__PURE__*/React.createElement("a", {

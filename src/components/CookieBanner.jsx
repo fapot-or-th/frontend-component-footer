@@ -19,7 +19,7 @@ const CookieBanner = ({ intl }) => {
   const onDismissCookie = () => Cookies.set('cookieconsent_status', 'dismiss', { domain });
 
   return cookieConsent ? <div /> : (
-    <div className="cookie-nanner">
+    <div className="cookie-banner">
       <div className="content">
         <a
           className="learn-more-link"
