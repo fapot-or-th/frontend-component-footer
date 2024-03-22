@@ -9,6 +9,8 @@ $gray-footer: #fcfcfc !default;
   position: fixed;
   bottom: 0;
 
+  transition: max-height 1s;
+
   width: 100%;
   display: flex;
   flex-direction: column;

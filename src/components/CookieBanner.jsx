@@ -1,4 +1,4 @@
-import React, { Fragment, useEffect, useState } from 'react';
+import React, { useState } from 'react';
 import { injectIntl, intlShape } from '@edx/frontend-platform/i18n';
 import { ensureConfig } from '@edx/frontend-platform';
 import { AppContext } from '@edx/frontend-platform/react';
@@ -12,9 +12,9 @@ ensureConfig([
 ], 'Footer component');
 
 const CookieBanner = ({ intl }) => {
-  const domain = window.location.hostname.replace('apps', '');
+  const domain = window.location.hostname.replace('apps.', '');
 
-  const [showCookie, setShowCookie] = useState(!!Cookies.get('cookieconsent_status', { domain }));
+  const [showCookie, setShowCookie] = useState(!Cookies.get('cookieconsent_status', { domain }));
 
   const onDismissCookie = () => {
     Cookies.set('cookieconsent_status', 'dismiss', { domain });
