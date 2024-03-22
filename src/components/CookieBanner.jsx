@@ -20,18 +20,19 @@ const CookieBanner = ({ intl }) => {
 
   return cookieConsent ? <div /> : (
     <div className="cookie-banner">
+      {intl.formatMessage(messages['cookie.banner.content'])}
       <div className="content">
         <a
           className="learn-more-link"
           href="https://www.cookiesandyou.com/"
           aria-label={intl.formatMessage(messages['cookie.banner.content'])}
         >
-          {intl.formatMessage(messages['cookie.banner.content'])}
+          {intl.formatMessage(messages['cookie.banner.leran.more'])}
         </a>
-        <button className="dismiss-button" type="button" onClick={onDismissCookie}>
-          { intl.formatMessage(messages['cookie.dismiss.button.label']) }
-        </button>
       </div>
+      <button className="dismiss-button" type="button" onClick={onDismissCookie}>
+        { intl.formatMessage(messages['cookie.dismiss.button.label']) }
+      </button>
     </div>
   );
 };

@@ -6,6 +6,11 @@ const messages = defineMessages({
     defaultMessage: 'This website uses cookies to ensure you get the best experience on our website. If you continue browsing this site, we understand that you accept the use of cookies.',
     description: 'This is cookie banner content.',
   },
+  'cookie.banner.leran.more': {
+    id: 'cookie.banner.leran.more',
+    defaultMessage: 'Learn more',
+    description: 'This is learn more text for cookie content.',
+  },
   'cookie.dismiss.button.label': {
     id: 'cookie.dismiss.button.label',
     defaultMessage: 'Got it!',
