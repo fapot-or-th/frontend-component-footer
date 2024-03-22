@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { Fragment } from 'react';
 import { injectIntl, intlShape } from '@edx/frontend-platform/i18n';
 import { ensureConfig } from '@edx/frontend-platform';
 import { AppContext } from '@edx/frontend-platform/react';
@@ -18,7 +18,7 @@ const CookieBanner = ({ intl }) => {
 
   const onDismissCookie = () => Cookies.set('cookieconsent_status', 'dismiss', { domain });
 
-  return cookieConsent && (
+  return cookieConsent ? <div /> : (
     <div className="cookie-nanner">
       <div className="content">
         <a

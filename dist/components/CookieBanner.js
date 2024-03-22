@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { Fragment } from 'react';
 import { injectIntl, intlShape } from '@edx/frontend-platform/i18n';
 import { ensureConfig } from '@edx/frontend-platform';
 import { AppContext } from '@edx/frontend-platform/react';
@@ -16,7 +16,7 @@ var CookieBanner = function CookieBanner(_ref) {
       domain: domain
     });
   };
-  return cookieConsent && /*#__PURE__*/React.createElement("div", {
+  return cookieConsent ? /*#__PURE__*/React.createElement("div", null) : /*#__PURE__*/React.createElement("div", {
     className: "cookie-nanner"
   }, /*#__PURE__*/React.createElement("div", {
     className: "content"
