@@ -38,7 +38,7 @@ var StudioFooter = function StudioFooter(_ref) {
     className: "col border-top ml-2"
   })), /*#__PURE__*/React.createElement(Container, {
     size: "xl",
-    className: "px-4"
+    className: "px-4 d-none"
   }, /*#__PURE__*/React.createElement(TransitionReplace, null, isOpen ? /*#__PURE__*/React.createElement(ActionRow, {
     key: "help-link-button-row",
     className: "py-4",

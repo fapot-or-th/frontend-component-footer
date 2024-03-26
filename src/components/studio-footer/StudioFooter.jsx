@@ -49,7 +49,7 @@ const StudioFooter = ({
         </Button>
         <div className="col border-top ml-2" />
       </div>
-      <Container size="xl" className="px-4">
+      <Container size="xl" className="px-4 d-none">
         <TransitionReplace>
           {isOpen ? (
             <ActionRow key="help-link-button-row" className="py-4" data-testid="helpButtonRow">
